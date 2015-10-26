@@ -19,10 +19,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    float circleX;
-    float circleY;
-    float circleSize;
-    
+
     float xSpeed;
     float ySpeed;
     

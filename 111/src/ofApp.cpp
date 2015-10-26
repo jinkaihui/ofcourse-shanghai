@@ -45,8 +45,8 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    circleX = circleX+xSpeed;
-    circleY = circleY+ySpeed;
+//    circleX = circleX+xSpeed;
+//    circleY = circleY+ySpeed;
     
 }
 
