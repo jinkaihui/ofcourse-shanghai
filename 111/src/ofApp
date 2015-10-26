@@ -1,0 +1,130 @@
+#include "ofApp.h"
+
+//--------------------------------------------------------------
+void ofApp::setup(){
+   // cout << "Hello Would";
+    
+   // cout << "This is an int"<< 5<< endl ;
+    
+   // cout << "This is an float"<< 1.5;
+    
+    //cout << "This is an char"<< 'a';
+    //cout << "This is an bool"<< true;
+   // int a=4;
+    
+   // int b=5;
+    
+   // int c=a+b;
+    
+   // cout << "4+5"<<4+5 <<endl ;
+   //  cout << "a+b"<<a+b <<endl ;
+    
+    
+   // float length=10.6;
+    ofBackground (0,0,0);
+    ofEnableAlphaBlending();
+    ofSetColor(100,204,47,170);
+    ofSetCircleResolution(64);
+    
+    
+//    circleX = ofGetWidth() /2;
+//    circleY = ofGetHeight() /2;
+//    circleSize = 50;
+//    xSpeed=0;
+//    ySpeed=0;
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+//--------------------------------------------------------------
+void ofApp::update(){
+    circleX = circleX+xSpeed;
+    circleY = circleY+ySpeed;
+    
+}
+
+//--------------------------------------------------------------
+void ofApp::draw(){
+    float x;
+    float y;
+    float radius;
+    float i;
+    x= ofGetWidth() /2;
+    y= ofGetHeight() /2;
+    radius=30;
+    for(i=0;i<50;i--){x;y;radius=radius+4;ofCircle( x,y, radius);
+    }
+//    radius=radius+40;
+//    
+//    
+//
+//    radius=radius+40;
+//    ofCircle( x,y, radius);
+  //  ofDrawBitmapString("zai",mouseX,mouseY);
+}
+
+
+//--------------------------------------------------------------
+void ofApp::keyPressed(int key){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::keyReleased(int key){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseMoved(int x, int y ){
+    if (x>ofGetWidth() /2){xSpeed=1;
+    }
+    else {
+        xSpeed=-1;
+    }
+    if (y>ofGetHeight() /2){ySpeed=1;
+    }
+    else {
+        ySpeed=-1;
+    }
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseDragged(int x, int y, int button){
+   
+}
+
+//--------------------------------------------------------------
+void ofApp::mousePressed(int x, int y, int button){
+    circleX=x ;
+    circleY=y;
+    cout <<"mousePressed"<<char(x)<< endl ;
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseReleased(int x, int y, int button){
+    cout <<"mouseReleased"<<char(x)<< endl ;
+}
+
+//--------------------------------------------------------------
+void ofApp::windowResized(int w, int h){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::gotMessage(ofMessage msg){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::dragEvent(ofDragInfo dragInfo){ 
+
+}
